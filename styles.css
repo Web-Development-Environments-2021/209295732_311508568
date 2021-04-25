@@ -24,7 +24,7 @@ body {
   color: #f60195;
 }
 
-.welcome {
+#welcome {
   background-image: url(images/Packman.jpg);
   background-repeat: no-repeat;
   min-width: 100%;
