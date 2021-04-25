@@ -60,6 +60,10 @@ function sighnUp(){
 	$("#signUp").show();
 	$("#game").hide();
 	$("#login").hide();
+	$('#Username').attr('required');
+	$('#password').attr('required');
+	$('#fullName').attr('required');
+	$('#email').attr('required');
 	clearIntervals();
 }
 
@@ -230,6 +234,10 @@ function checkValuesSignUp() {
 		$("#signUp").hide();
 		$("#game").hide();
 		$("#login").hide();
+		$('#Username').removeAttr('required');
+		$('#password').removeAttr('required');
+		$('#fullName').removeAttr('required');
+		$('#email').removeAttr('required');
 		$("#myForm").children().each(function(i, elm) {
 			$(elm).val("");
 		});
